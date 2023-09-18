@@ -1,16 +1,20 @@
 :root {
+    /* body */
   --bg-color: #c0d1de;
-  --bg-wrapper: linear-gradient(145deg, #fef30c, #adbcc8);
-
+   /* wrapper */
+  --bg-wrapper: linear-gradient(145deg, #fdfeff, #adbcc8);
   --shadow-wrapper: 5px 5px 10px #a7b6c1, -5px -5px 10px #d9ecfb;
+  
+  /* switch */
   --bg-span: linear-gradient(145deg, #adbcc8, #cde0ee);
   --shadow-bg-span: inset 5px 5px 10px #a7b6c1, inset -5px -5px 10px #d9ecfb;
-
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color-hover: rgba(151, 134, 134, 0);
-
+  --highlight-color-hover: #0077f2;
   --switch-br-url: url(./img/sun.svg);
+
+  /* img-area */
+  --img-area-shadow : 6px 6px 12px #bebfbf, -6px -6px 12px #ffffff;
+
+
 }
 
 * {
@@ -72,21 +76,44 @@ body {
   width: 64px;
   height: 24px;
   border-radius: 9999px;
-  /* border: 1px solid var(--stroke-color); */
   background: var(--bg-span);
   box-shadow: var(--shadow-bg-span);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
-.dark {
-  --bg-color: #424242;
-  --bg-wrapper: linear-gradient(145deg, #000000, #4b5257);
-  --shadow-wrapper: 35px 35px 70px #393939, -35px -35px 70px #4b4b4b;
-  --switch-br-url: url(./img/moon-stars.svg);
+.img-area{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19rem;
+    height: 19rem;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    box-shadow: var(--img-area-shadow);
+}
 
-  --bg-span: linear-gradient(145deg, #3b3b3b, #474747);
-  --shadow-bg-span: inset 5px 5px 10px #393939, inset -5px -5px 10px #4b4b4b;
+.img-cover {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 0.8rem;
+    object-fit: cover;
+    border-radius: 50%; 
+} 
+
+
+.dark {
+    --bg-color: #424242;
+    --bg-wrapper: linear-gradient(145deg, #000000, #4b5257);
+    --shadow-wrapper: 35px 35px 70px #393939, -35px -35px 70px #4b4b4b;
+    --switch-br-url: url(./img/moon-stars.svg);
+
+    --bg-span: linear-gradient(145deg, #3b3b3b, #474747);
+    --shadow-bg-span: inset 5px 5px 10px #393939, inset -5px -5px 10px #4b4b4b;
+    --img-area-shadow: 6px 6px 12px #050606, -6px -6px 12px #18191a;
+
 }
 .dark #switch button {
   animation: slide-in 0.4s forwards;
