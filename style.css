@@ -10,7 +10,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color-hover: rgba(151, 134, 134, 0);
 
-  --switch-br-url: url(/img/sun.svg);
+  --switch-br-url: url(./img/sun.svg);
 }
 
 * {
@@ -35,7 +35,7 @@ body {
   height: 860px;
   max-width: 600px;
   border-radius: 20px;
-   padding: 2rem;
+  padding: 2rem;
   margin: 15% auto;
   margin-top: 80px;
   overflow: hidden;
@@ -83,7 +83,7 @@ body {
   --bg-color: #424242;
   --bg-wrapper: linear-gradient(145deg, #000000, #4b5257);
   --shadow-wrapper: 35px 35px 70px #393939, -35px -35px 70px #4b4b4b;
-  --switch-br-url: url(/img/moon-stars.svg);
+  --switch-br-url: url(./img/moon-stars.svg);
 
   --bg-span: linear-gradient(145deg, #3b3b3b, #474747);
   --shadow-bg-span: inset 5px 5px 10px #393939, inset -5px -5px 10px #4b4b4b;
